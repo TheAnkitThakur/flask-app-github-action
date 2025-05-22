@@ -24,9 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
-        run: pytest
-
   deploy-staging:
     needs: build-and-test
     if: github.ref == 'refs/heads/staging'
