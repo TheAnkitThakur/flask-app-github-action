@@ -5,8 +5,7 @@ on:
     branches: 
       - main
       - staging
-  release:
-    types: [created]
+  
 
 jobs:
   build-and-test:
