@@ -2,7 +2,9 @@ name: Flask CI/CD Pipeline
 
 on:
   push:
-    branches: [main, staging]
+    branches: 
+      - main
+      - staging
   release:
     types: [created]
 
